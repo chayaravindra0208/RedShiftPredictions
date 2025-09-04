@@ -38,7 +38,7 @@ understand the expansion of the universe through the study of galaxy spectra.
 st.image(IMAGE_ADDRESS, 
          caption="Redshift")
 
-if not st.user.is_logged_in:
+if not st.experimental_user.is_logged_in:
     if st.sidebar.button("Log in with Google", type="primary", icon=":material/login:"):
         st.login()
 else:
