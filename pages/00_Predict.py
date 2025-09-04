@@ -22,7 +22,7 @@ model = load_pickle_model("random_forest_regression")
 scaler_model = load_pickle_model("scaler_model")
 
 # Authentication check
-if not st.user.is_logged_in:
+if not st.experimental_user.is_logged_in:
     st.error("You must be logged in to access this page.", icon="⚠️")
     st.stop()
 
